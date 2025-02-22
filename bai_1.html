@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thông tin cá nhân </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        color: #000000;
+        background-image: url('https://i.pinimg.com/736x/56/49/6f/56496fb7696c9a37ae7207dac92a8869.jpg');
+        background-size: auto;
+        background-position: center;
+      }
+        .container {
+            img {
+            width: 200px;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            }
+            width: 100%;
+            max-width: 900px;
+            gap: 30px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .info {
+            text-align: left;
+            flex: 1;
+        }
+        .lienhe {
+            text-align: center;
+            margin-top: 30px;
+            background: #ffffff;
+            padding: 1%;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 900px;
+            img {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            }
+            a {
+                margin: 0 15px;
+                display: inline-block;
+                transition: transform 0.5s ease;
+            }
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .lienhe a:hover {
+        transform: scale(1.1);
+      }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="https://i.pinimg.com/736x/84/f9/50/84f950607199d47cddb8db8824f43899.jpg" 
+        alt="anh ca nhan"
+        style = "box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);">
+            <div class="info">
+                <h1>Thông tin cá nhân</h1>
+                
+                    <p><strong>Họ và tên:</strong> Nguyễn Ngọc Anh</p>
+                
+                <p><strong>Ngày sinh:</strong> 20/05/2005</p>
+                <p><strong>Chuyên ngành:</strong> Công nghệ thông tin</p>
+                <p><strong>Mã số sinh viên:</strong> 2300614</p>
+                <p><strong>Số điện thoại:</strong> 03956xxxxx</p>
+            </div>
+    </div>
+    <div class="lienhe">
+    <h2>Thông tin liên hệ</h2>
+                <a href="mailto:ngocanh2052k5@gmail.com">
+                        <img src = "https://i.pinimg.com/736x/4f/22/3f/4f223fd5dd033d55b672a49de29c83a2.jpg" 
+                        alt = "email">
+                </a>
+                <a href="https://www.facebook.com/nogc.nah.2024/">
+                        <img src = "https://i.pinimg.com/736x/f4/59/bd/f459bd69b402380876270a5c7ec2867f.jpg" 
+                        alt = "facebook">
+                </a>
+                <a href="https://www.tiktok.com/@a520n205">
+                        <img src = "https://i.pinimg.com/736x/c1/80/98/c18098e2251a296c00eee06af0689f90.jpg" 
+                        alt = "tiktok">
+                </a>
+    </div>
+    <audio id="background-audio" hidden>
+        <source src="Gì mà không hợp chứ.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        document.addEventListener('click', function() {
+            var audio = document.getElementById('background-audio');
+            audio.loop = true;
+            audio.play();
+        });
+    </script>
+</body>
+</html>
